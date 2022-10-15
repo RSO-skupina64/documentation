@@ -30,7 +30,7 @@ Uporabljena ogrodja:
 
 ## Shema arhitekture in interakcij med mikrostoritvami
 
-![Shema arhitekture](/src/shema_arhitekture.png)
+![Shema arhitekture](/general/src/shema_arhitekture.png)
 
 ## Seznam funkcionlnosti posamezne mikrostoritve
 
