@@ -19,6 +19,7 @@ Hkrati lahko tudi upravlja z priljubljeni izdelki uporabnika.
 ## Uporabljeno ogrodje in razvojno okolje
 
 Pri razvoju projekta bomo uporabili razvojno okolje [IntelliJ IDEA](https://www.jetbrains.com/idea/), za katerega bomo uporabili študentsko licenco za *Ultimate* verzijo.
+Uporabili bomo tudi [WebStorm](https://www.jetbrains.com/webstorm/) za razvoj čelnega dela aplikacije ter [DataGrip](https://www.jetbrains.com/datagrip/) za pregled podatkovne baze.
 
 Uporabljena ogrodja:
 - čelni del (*frontend*): [Angular](https://angular.io)
