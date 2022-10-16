@@ -45,6 +45,11 @@ Njegova naloga je ustrezno klicati preostale mikrostoritve in izvajati ustrezne 
 Na zahtevo pripravi tudi zgodovino cene posameznega izdelka v vseh trgovinah
 - Administracija: upravljanje z uporabnikimi računi, ročno proženje pridobivanje cene izdelkov, upravljanje z priljubljenimi izdelki in izdelki, ki so prikazani v aplikaciji 
 
+## Kompleksnejši zahtevek z najmanj tremi mikrostoritvami
+
+Uporabnik zahteva izračun cene košarice, sestavljene iz njegovih priljubljenih izdelkov.
+Kliče se mikrostoritev za serviranje podatkov, ki pokliče mikrostoritev za priljubljene izdelke in izračun cene.
+
 ## Okviren seznam primerov uporabe aplikacije
 
 V času načrtovanja aplikacije smo identificirali naslednje primere uporabe (*use-case*):
