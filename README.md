@@ -7,5 +7,10 @@ Ta repozitorij je namenjen dokumentaciji projekta skupine 64 pri predmetu Račun
 V tem repozitoriju je prisotna dokumentacija vsake posamezne mikrostoritve projekta.
 Dokumentacija posamezne mikrostoritve se nahaja v ustreznem poddirektoriju repozitorija.
 
-**TODO: dodaj linke do podmap mikrostoritev**
 - [Splošna dokumentacija](/general)
+- [Avtentikacija](/authentication)
+- [Administracija](/administration)
+- [Izračun cene](/price-calculation)
+- [Pridobivanje cen izdelkov](/price-extraction)
+- [Priljubljeni izdelki](/favourite-products)
+- [Ažuriranje podatkov](/core)
