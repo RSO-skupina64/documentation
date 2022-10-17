@@ -23,10 +23,7 @@ Uporabili bomo tudi [WebStorm](https://www.jetbrains.com/webstorm/) za razvoj č
 
 Uporabljena ogrodja:
 - čelni del (*frontend*): [Angular](https://angular.io)
-- zaledni del (*backend*): 
-  - [Quarkus??](https://quarkus.io)
-  - [Spring Boot??](https://spring.io/projects/spring-boot)
-  - KumuluzEE
+- zaledni del (*backend*): [Spring Boot](https://spring.io/projects/spring-boot)
 - trajna hramba podatkov: [MySQL](https://www.mysql.com)
 
 ## Shema arhitekture in interakcij med mikrostoritvami
