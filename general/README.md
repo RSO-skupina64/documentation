@@ -61,3 +61,12 @@ V času načrtovanja aplikacije smo identificirali naslednje primere uporabe (*u
   Ti izdelki so prikazani v obliki tabele in klik na določen izdelek prikaže zgodovino cen specifičnega izdelka v različnih trgovinah.
 - v četrtem zavihku "Administracija" avtenticirani uporabnik z vlogo *Administrator* upravlja z izdelki, ki so vnešeni v primerjalnik.
   Lahko doda nov izdelek, ročno proži proces pridobitve cen vseh izdelkov, dodeljuje priljubljene izdelke uporabnikom itd.
+
+## Razvoj projekta
+
+Za lokalni razvoj projekta je potrebno namestiti [MySQL](https://dev.mysql.com/downloads/installer/).
+Ob namestitvi je potrebno namestiti tudi `MySQL Workbench` program.
+
+Znotraj `MySQL Workbench` programa dodamo novo MySql konekcijo s klikom na gumb `+`.
+- Za lokalni razvoj je pomembno nastaviti port na `3306`, saj je v vseh podprojektih naveden ta port.
+- Kot admin userja definiramo `admin/123456`
