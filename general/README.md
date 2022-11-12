@@ -4,7 +4,7 @@
 
 ## Člani skupine:
 - Erazem Pušnik (**TODO email**)
-- Rok Miklavčič (**TODO email**)
+- Rok Miklavčič (rm9039@student.uni-lj.si)
 - Aljaž Šmaljcelj (as9721@student.uni-lj.si)
 
 ## Opis projekta
