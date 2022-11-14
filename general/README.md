@@ -3,7 +3,7 @@
 ## Naslov projekta: Primerjalnik cen izdelkov
 
 ## Člani skupine:
-- Erazem Pušnik (**TODO email**)
+- Erazem Pušnik (ep7525@student.uni-lj.si)
 - Rok Miklavčič (rm9039@student.uni-lj.si)
 - Aljaž Šmaljcelj (as9721@student.uni-lj.si)
 
