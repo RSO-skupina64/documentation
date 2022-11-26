@@ -30,6 +30,10 @@ Uporabljena ogrodja:
 
 ![Shema arhitekture](/general/src/shema_arhitekture.png)
 
+## Podatkovni model 
+
+![Podatkovni_model](/general/src/podatkovni_model.png)
+
 ## Seznam funkcionlnosti posamezne mikrostoritve
 
 - Ažuriranje podatkov: vmesni člen med čelnim delom in zalednim delom aplikacije. 
