@@ -74,3 +74,43 @@ Ob namestitvi je potrebno namestiti tudi `MySQL Workbench` program.
 Znotraj `MySQL Workbench` programa dodamo novo MySql konekcijo s klikom na gumb `+`.
 - Za lokalni razvoj je pomembno nastaviti port na `3306`, saj je v vseh podprojektih naveden ta port.
 - Kot admin userja definiramo `admin/123456`
+
+### Azure
+
+V primeru, da želimo preizkusiti delovanje naše aplikacije na produkcijskem okolju, se prijavimo na Azure portal (credentialsi na voljo na Discordu).
+Za bazo potrebujemo `primerjalnik-cen-server`, za deploy pa `primerjalnikCenCluster`.
+
+#### Podatkovna baza
+
+- izberemo storitev `primerjalnik-cen-server`
+- kliknemo na gumb `Start`, označen na sliki
+
+![zagon_baze](/general/src/DB.png)
+
+- počakamo, da se vzpostavi podatkovna baza
+- baza je dostopna na produkcijkem JDBC URL-ju, ki ga pridobimo:
+  - na desni strani izberemo `Connect`
+  - razširimo meni `Connect from your app`
+  - skopiramo url v `application.properties` na ustrezno mesto
+  - namesto placeholderja `{your_database}` uporabimo `primerjalnik-cen`
+
+**Po končanem pregledu ne pozabi ugasniti baze, saj se delovanje računa na minuto, da ne izgubimo vseh kreditov!!! (gumb `Stop` poleg gumba `Start`)**
+
+#### Cluster
+
+- izberemo storitev `primerjalnik-cen-cluster`
+- kliknemo gumb `Start` 
+- počakamo, da se cluster zažene
+- če želimo pregledati, ali pod teče:
+  - kliknemo `Workloads` na desni strani
+  - izberemo ustrezen workload (poimenovan po nazivu mikrostoritve)
+  - pregledamo status tega workload-a (mora biti zelen - `Running`)
+- če se želimo povezati na ta pod:
+  - odpremo terminal v Azure-u
+
+![azure_CLI](/general/src/CLI.png)
+
+  - počakamo, da se terminal vzpostavi
+  - vnesemo ukaz `kubectl get service {service-name} --watch`, kjer `{service-name}` zamenjamo z imenom mikrostoritve (tako je poimenovan nas pod)
+  - počakamo, da se v stolpcu `EXTERNAL-IP` pojavi IP naslov
+  - v Browser vnesemo pridobljen IP, zraven dodamo še `:{PORT}`, kjer `{PORT}` nadomestimo s številko porta v stolpcu poleg eksternega API-ja
