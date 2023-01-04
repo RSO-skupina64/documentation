@@ -1,0 +1,55 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: primerjalnik-cen
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /prices(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: prices
+                port:
+                  number: 8080
+          - path: /price-calculation(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: price-calculation
+                port:
+                  number: 8080
+          - path: /administration(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: administration
+                port:
+                  number: 8080
+          - path: /authentication(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: authentication
+                port:
+                  number: 8080
+          - path: /favorite-products(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: favorite-products
+                port:
+                  number: 80
+          - path: /data-aggregation(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: data-aggregation
+                port:
+                  number: 8080
