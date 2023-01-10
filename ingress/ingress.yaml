@@ -25,6 +25,13 @@ spec:
                 name: price-calculation
                 port:
                   number: 8080
+          - path: /administration-grpc(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: administration
+                port:
+                  number: 9090
           - path: /administration(/|$)(.*)
             pathType: Prefix
             backend:
@@ -45,7 +52,7 @@ spec:
               service:
                 name: favorite-products
                 port:
-                  number: 80
+                  number: 8080
           - path: /data-aggregation(/|$)(.*)
             pathType: Prefix
             backend:
