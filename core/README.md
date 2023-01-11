@@ -1,1 +1,0 @@
-# Manipulacija podatkov

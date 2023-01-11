@@ -13,4 +13,4 @@ Dokumentacija posamezne mikrostoritve se nahaja v ustreznem poddirektoriju repoz
 - [Izračun cene](/price-calculation)
 - [Pridobivanje cen izdelkov](/price-extraction)
 - [Priljubljeni izdelki](/favourite-products)
-- [Ažuriranje podatkov](/core)
+- [Ažuriranje podatkov](/data-aggregation)

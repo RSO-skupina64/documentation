@@ -1,6 +1,6 @@
-# Priljubljeni izdelki
+# Agregiranje podatkov
 
-Mikrostoritev omogoča upravljanje z priljubljenimi izdelki uporabnika.
+Mikrostoritev predstavlja orkestracijsko mikrostoritev za komunikacijo s klienti in serviranju osnovnih entitet.
 
 API dokumentacija na voljo na `/openapi.html` naslovu
 
